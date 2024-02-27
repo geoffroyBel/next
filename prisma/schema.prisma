@@ -40,6 +40,8 @@ model User {
   email         String?   @unique
   emailVerified DateTime?
   image         String?
+  password      String?
+  admin         Boolean?
   accounts      Account[]
   sessions      Session[]
   Post          Post[]
